@@ -1,0 +1,70 @@
+name: Отчет об ошибке
+description: Отчет об ошибке
+title: "[БАГ] "
+labels: ["баг"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Версия мода
+      description: Какая версия мода?
+      placeholder: "пример: 1.2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Версия Minecraft
+      description: Версия Minecraft
+      placeholder: "пример: 1.21.4"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Загрузчик модов
+      options:
+        - Fabric
+        - Quilt
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: Что случилось?
+      description: Проблема
+      placeholder: "У меня проблема с..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Как воспроизвести?
+      description: Инструкция
+      placeholder: |
+        1. Создай мир
+        2. Открой инвентарь другого игрока
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи
+      description: Вставь последние строки логов `logs/latest.log` сюда.
+      placeholder: "Лог ошибки..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Другие моды
+      description: Какие моды ты ещё использовал?
+      placeholder: "Mouse Tweaks, Inventory Profiles Next, и т.д."
+    validations:
+      required: false
