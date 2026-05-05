@@ -1,0 +1,70 @@
+name: Bug Report
+description: Bug Report
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Mod Version
+      description: Какая версия у тебя установлена?
+      placeholder: "example: 1.2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft Version
+      description: Minecraft Version
+      placeholder: "example: 1.21.4"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod loader
+      options:
+        - Fabric
+        - Quilt
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What is wrong? 
+      description: Problem
+      placeholder: "I have a problem with..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How to repeat?
+      description: Intsruction
+      placeholder: |
+        1. Create World
+        2. Open player's inventory
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste the last lines from `logs/latest.log` here or attach a file.
+      placeholder: "Log of issue..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Другие моды
+      description: Какие ещё моды установлены?
+      placeholder: "Mouse Tweaks, Inventory Profiles Next, etc."
+    validations:
+      required: false
