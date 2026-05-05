@@ -1,0 +1,31 @@
+name: Предложение
+description: Поделиться идеей по улучшению мода
+title: "[ИДЕЯ] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какая проблема требует решения?
+      description: Что тебя не устраивает или чего не хватает?
+      placeholder: "Мне неудобно, что..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Твоё предложение
+      description: Как ты видишь решение?
+      placeholder: "Было бы круто, если бы мод мог..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Альтернативы (если есть)
+      description: Другие способы решить эту проблему?
+      placeholder: "Можно ещё сделать так..."
+    validations:
+      required: false
