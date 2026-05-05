@@ -7,7 +7,7 @@ body:
     id: version
     attributes:
       label: Mod Version
-      description: Какая версия у тебя установлена?
+      description: Which your version of Minecraft?
       placeholder: "example: 1.2.0"
     validations:
       required: true
@@ -35,7 +35,7 @@ body:
     id: what_happened
     attributes:
       label: What is wrong? 
-      description: Problem
+      description: Your problem
       placeholder: "I have a problem with..."
     validations:
       required: true
@@ -63,8 +63,8 @@ body:
   - type: textarea
     id: other_mods
     attributes:
-      label: Другие моды
-      description: Какие ещё моды установлены?
+      label: Other mods
+      description: What other mods do you use?
       placeholder: "Mouse Tweaks, Inventory Profiles Next, etc."
     validations:
       required: false
