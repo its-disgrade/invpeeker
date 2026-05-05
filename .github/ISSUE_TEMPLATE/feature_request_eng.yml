@@ -1,0 +1,31 @@
+name: Request
+description: Share an idea for improving the mod
+title: "[IDEA] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem needs to be solved?
+      description: What are you not happy with or what is missing?
+      placeholder: "Inconvenient controls..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Your request
+      description: How do you see the solution?
+      placeholder: "It would be cool if the mod could..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Other ways to solve this problem?
+      placeholder: "You can also do this..."
+    validations:
+      required: false
