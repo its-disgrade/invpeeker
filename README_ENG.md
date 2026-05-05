@@ -50,3 +50,7 @@ A: Yes, the mod uses vanilla GUI textures.
 ## Screenshot
 <img width="1919" height="1011" alt="Screenshot" src="https://github.com/user-attachments/assets/f3877ba9-ef29-4585-a58a-077aed829fcc" />
 
+## Bug Report and Requests
+[Bug Report](https://github.com/YOUR_USERNAME/invpeeker/issues/new?template=bug_report_eng.yml)
+
+[Request](https://github.com/YOUR_USERNAME/invpeeker/issues/new?template=feature_request_eng.yml)
